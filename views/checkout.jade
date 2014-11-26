@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Checkout</title>
+<link rel="stylesheet" href="/stylesheets/bundle.css">
+
+</head>
+<body>
+<header id="pagetop" class="type-2">
+<div class="container_12"><div class="grid_12 clearfix masthead"><p class="hd-welcome"><strong>Hello&nbsp;Jonas</strong> (<a id="logoutLink" href="#">Logout</a>)</p><p class="time t-help-trigger" id="basketTimer"   data-time="893"></p></div><div class="clear"></div></div></header> 
+<nav><div class="container_12"><div class="grid_12"><ul class="steps clearfix"><li class="first">1. Your shopping basket</li><li>2. Your address</li><li class="last current">3. Your payment</li></ul></div></div></nav> 
+<div class="main">
+<div class="container_12">
+<div class="grid_8 suffix_1">
+<div class="cart clearfix">
+<div class="cart-content">
+<h2>Shopping basket</h2>
+<table>
+<thead>
+<tr>
+<th colspan="3">Article</th>
+<th class="last">Price</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="image"><img src="/images/bag.jpg" alt="Schultertasche Filatura, B40 x H45 x T20 cm" /></td>
+<td class="description"><strong>PRINCESS&amp;CULT</strong>Should bag Filatura, B40 x H45 x T20 cm<span class="uvp"><abbr>UVP</abbr>
+<del>129,00&nbsp;&euro;</del><strong>44,90&nbsp;&euro;</strong></span></td>
+<td class="meta">Amount:&nbsp;1<br /></td>
+<td class="price">44,90&nbsp;&euro;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<table class="result">
+<tbody>
+<tr>
+<th scope="row">Sum</th>
+<td>44,90&nbsp;&euro;</td>
+</tr>
+<tr>
+<th scope="row">Shipping costs to DE</th>
+<td>6,90&nbsp;&euro;</td>
+</tr>
+<tr class="final">
+<th scope="row">Sum of your order (<abbr>inkl.</abbr> <abbr>MwSt.</abbr>)
+</th>
+<td>51,80&nbsp;&euro;</td>
+</tr>
+</tbody>
+</table>
+</fieldset>
+</div>
+<section>
+<h2>Payment details</h2>
+<h3>How do you want to pay?</h3>
+<hr>
+<li>Value of your current token request:<strong> #{token}</strong></li>
+</ul>
+<hr>
+<div id="copyandpay_checkout" class="payment_checkout">
+<p>replace me with COPYandPAY checkout form<br /> - You need to adapt <strong>views/checkout.jade</strong> for frontend changes (line: 6 and line: 63)<br /><strong> Every single line in *.jade has to to start with a html tag! No tab, no whitespace!</strong><br /><br /> - You need to adapt <strong>routes/index.js</strong> for backend changes</p>
+</div>
+<p>Referring to <a href="https://test.paysourcing.info/frontend/Integrationguide/COPYandPAY.html" target="_blank">COPYandPAY Integration Guide</a> please design a checkout page with following payment methods:</p>
+<ul>
+<li>Visa</li>
+<li>Master</li>
+<p>Your task is done if:</p>
+<ul>
+<li>...Visa and Master is shown at the checkout page</li>
+<li>...a payment is done with Visa, eg. Name: user your name, Number:4200 0000 0000 0000, CVV:123, Expiry date 12/2014</li>
+<li>...the result page displays the result based on the json response</li>
+</ul>
+<hr>
+</section>
+</div>
+<div class="grid_3 aside">
+<p class="hint">Please check your data</p>
+<section class="address">
+<h3>Shipping address</h3>
+<address>Jonas Pinkman<br />Dachauerstraße 111<br />80335 M&uuml;nchen<br />Deutschland<br />
+</address>
+<p>
+<a href="/checkout/products?execution=e1s2&amp;_eventId=CHANGE_SHIPPING_ADDRESS">&Auml;ndern</a>
+</p>
+</section>
+<section class="address">
+<h3>Billing address</h3>
+<address>Jonas Pinkman<br />Dachauerstraße 111<br />80335 M&uuml;nchen<br />Deutschland
+</address>
+<p>
+<a href="/checkout/products?execution=e1s2&amp;_eventId=CHANGE_BILLING_ADDRESS">&Auml;ndern</a>
+</p>
+</section>
+<section>
+<h3>Overview</h3>
+<table>
+<tbody>
+<tr>
+<th scope="row">Article</th>
+<td>44,90&nbsp;&euro;</td>
+</tr>
+<tr>
+<th scope="row">Shipping costs</th>
+<td>6,90&nbsp;&euro;</td>
+</tr>
+<tr class="result">
+<th scope="row">Sum of your order</th>
+<td>51,80&nbsp;&euro;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+<div class="clear"></div>
+<div class="grid_8 suffix_4"></div>
+</div>
+</div></body></html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<link rel="stylesheet" href="/stylesheets/bundle.css">
+</head>
+<body>
+<header id="pagetop" class="type-2">
+<div class="container_12">
+<div class="grid_12 clearfix masthead">
+<p class="hd-welcome">
+<strong>Hello Jonas</strong> (<a id="logoutLink" href="#">Logout</a>)
+</p>
+<p class="time t-help-trigger" id="basketTimer" data-time="893"></p>
+</div>
+<div class="clear"></div>
+</div>
+</header>
+<nav>
+<div class="container_12">
+<div class="grid_12">
+<ul class="steps clearfix">
+<li class="first">1. Your shopping basket</li>
+<li>2. Your address</li>
+<li class="last current">3. Your payment</li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="main">
+<div class="container_12">
+<div class="grid_8 suffix_1">
+<section>
+<h2>Thank you for shopping.</h2>
+<div id="copyandpay_result" class="payment_checkout">
+<p>Please adapt the index.js in order to request a valid result:</p>
+<ul>
+<li>Value of your current result request:<strong> #{message}</strong></li>
+</ul>
+</div>
+<hr>
+</section>
+</div>
+<div class="grid_3 aside">
+<p class="hint">Please check your data</p>
+<section class="address">
+<h3>Shipping address</h3>
+<address>Jonas Pinkman<br />Dachauerstraße 111<br />80335 M&uuml;nchen<br />Deutschland<br />
+</address>
+<p>
+<a href="/checkout/products?execution=e1s2&amp;_eventId=CHANGE_SHIPPING_ADDRESS">&Auml;ndern</a>
+</p>
+</section>
+<section class="address">
+<h3>Billing address</h3>
+<address>Jonas Pinkman<br />Dachauerstraße 111<br />80335 M&uuml;nchen<br />Deutschland
+</address>
+<p>
+<a href="/checkout/products?execution=e1s2&amp;_eventId=CHANGE_BILLING_ADDRESS">&Auml;ndern</a>
+</p>
+</section>
+<section>
+<h3>Overview</h3>
+<table>
+<tbody>
+<tr>
+<th scope="row">Article</th>
+<td>44,90&nbsp;&euro;</td>
+</tr>
+<tr>
+<th scope="row">Shipping costs</th>
+<td>6,90&nbsp;&euro;</td>
+</tr>
+<tr class="result">
+<th scope="row">Sum of your order</th>
+<td>51,80&nbsp;&euro;</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+<div class="clear"></div>
+<div class="grid_8 suffix_4"></div>
+</div>
+</div>
+</body>
+</html>
